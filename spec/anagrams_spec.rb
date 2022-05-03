@@ -37,17 +37,17 @@ describe(Words) do
     end
   end
 
-  # describe('#anagram_check?') do
-  #   it('will check to see if two words are anagrams') do
-  #     anagram = Words.new('ruby', 'bury')
-  #     not_anagram = Words.new('cat', 'rat')
-  #     also_not = Words.new('ctrg', 'grtc')
-  #     anti = Words.new('bed', 'rat')
-  #     expect(anagram.anagram_check?).to(eq('Is an anagram'))
-  #     expect(not_anagram.anagram_check?).to(eq('not an anagram'))
-  #     expect(also_not.anagram_check?).to(eq('Is NOT an anagram.'))
-  #     expect(anti.anagram_check?).to(eq('is an anti-gram'))
-  #   end
+  describe('#anagram_check?') do
+    it('will check to see if two words are anagrams') do
+      anagram = Words.new('ruby', 'bury')
+      not_anagram = Words.new('cat', 'rat')
+      also_not = Words.new('ctrg', 'grtc')
+      anti = Words.new('bed', 'rat')
+      expect(anagram.anagram_check?).to(eq('Is an anagram'))
+      expect(not_anagram.anagram_check?).to(eq('not an anagram'))
+      expect(also_not.anagram_check?).to(eq('Is NOT an anagram.'))
+      expect(anti.anagram_check?).to(eq('is an anti-gram'))
+    end
 
   end
   
