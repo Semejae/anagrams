@@ -26,16 +26,16 @@ describe(Words) do
     end
   end
 
-  # describe('#anti_gram_check?') do 
-  #   it('will see if the given strings have no letters in common') do
-  #     anagram = Words.new('ruby', 'bury')
-  #     anti = Words.new('art', 'cow')
-  #     neither = Words.new('art', 'arc')
-  #     expect(anagram.anti_gram_check?).to(eq(false))
-  #     expect(anti.anti_gram_check?).to(eq(true))
-  #     expect(neither.anti_gram_check?).to(eq(false))
-  #   end
-  # end
+  describe('#anti_gram_check?') do 
+    it('will see if the given strings have no letters in common') do
+      anagram = Words.new('ruby', 'bury')
+      anti = Words.new('art', 'cow')
+      neither = Words.new('art', 'arc')
+      expect(anagram.anti_gram_check?).to(eq(false))
+      expect(anti.anti_gram_check?).to(eq(true))
+      expect(neither.anti_gram_check?).to(eq(false))
+    end
+  end
 
   # describe('#anagram_check?') do
   #   it('will check to see if two words are anagrams') do
